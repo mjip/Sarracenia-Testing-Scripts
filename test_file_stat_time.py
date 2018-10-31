@@ -13,6 +13,12 @@ except:
 start = time.time()
 
 lstat = os.stat(fname)
+
+end = time.time()
+print("It took {0} to generate the stat of the file".format(end-start))
+
+start = time.time()
+
 mtime = lstat[stat.ST_MTIME]
 
 end = time.time()
